@@ -4,6 +4,7 @@ Predicting Medical Insurance Costs Using Multiple Linear Regression
 *Model: Multiple Linear Regression*
 
 *Languaged used: Python**
+
 # 1. Introduction
 ## 1.1. Background & Motivation
 In the United States, healthcare expenses continue to rise, making health insurance a major financial concern for households. In 2025, the average employer-sponsored family premium reached about $26,993 per year, placing significant economic pressure on individuals and families. Health spending accounted for roughly 17.6% of U.S. GDP in 2023, highlighting the scale of the issue at a national level. The growth in medical costs is driven by increased healthcare demand, population aging, and lifestyle-related diseases. Understanding how demographic, lifestyle, and regional factors influence insurance charges helps insurers design fair pricing systems and enables individuals to manage potential health expenses more effectively—thereby motivating the use of statistical modeling to identify key cost drivers and estimate medical charges reliably.
@@ -49,6 +50,7 @@ Using the OLS summary, we analyze the weight of every variable:
 *Statistical methods used: linear regression, t-test, ANOVA*
 ## 4.1 Hypothesis testing
 ### 4.1.1 t-test
+
 *H_0: beta for each variable is 0*
 
 *Null hypothesis: The connection between the variables and the target doesn't exist*
@@ -58,6 +60,7 @@ Using the OLS summary, we analyze the weight of every variable:
 - Region (region_nw, region_se, region_sw): If these variables show p-values > 0.05, it implies that the geographic location of the policyholder does not significantly influence the cost of insurance relative to the reference region (Northeast). If a specific region (e.g., Southeast) has a p-value < 0.05, it suggests a statistically significant regional price difference.
 - Reject the null hypothesis. There is extremely strong statistical evidence to confirm that all selected factors: age,bmi,smoker,children,sex significantly impacts insurance charges; this relationship is not due to random chance. Notably, smoking status is the most influential factor, as evidenced by its substantial coefficient (1.5538) and the highest T-score (51.319). It is followed by age, which also shows a highly significant impact with a T-score of 39.585 and a coefficient of 0.0345.
 ### 4.1.2 ANOVA
+
 *H_0: mean of all regions are the same*
 
 *Null hypothesis: Mean does not differ across regions*
