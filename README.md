@@ -2,6 +2,7 @@
 Predicting Medical Insurance Costs Using Multiple Linear Regression
 
 *Model: Multiple Linear Regression*
+
 *Languaged used: Python**
 # 1. Introduction
 ## 1.1. Background & Motivation
@@ -49,6 +50,7 @@ Using the OLS summary, we analyze the weight of every variable:
 ## 4.1 Hypothesis testing
 ### 4.1.1 t-test
 *H_0: beta for each variable is 0*
+
 *Null hypothesis: The connection between the variables and the target doesn't exist*
 
 **Conclusion:**
@@ -57,6 +59,7 @@ Using the OLS summary, we analyze the weight of every variable:
 - Reject the null hypothesis. There is extremely strong statistical evidence to confirm that all selected factors: age,bmi,smoker,children,sex significantly impacts insurance charges; this relationship is not due to random chance. Notably, smoking status is the most influential factor, as evidenced by its substantial coefficient (1.5538) and the highest T-score (51.319). It is followed by age, which also shows a highly significant impact with a T-score of 39.585 and a coefficient of 0.0345.
 ### 4.1.2 ANOVA
 *H_0: mean of all regions are the same*
+
 *Null hypothesis: Mean does not differ across regions*
 
 **Conclusion:**
